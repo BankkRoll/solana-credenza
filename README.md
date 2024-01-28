@@ -1,5 +1,9 @@
 # Solana Connect Credenza Component
 
+| PC Version | Mobile Version |
+|:----------:|:--------------:|
+| <img src="https://github.com/BankkRoll/solana-credenza/assets/106103625/204e21d4-910e-40e9-8cc9-a7c3d898942d" alt="PC Version" width="700"> | <img src="https://github.com/BankkRoll/solana-credenza/assets/106103625/69ff78bf-1fcc-4c0a-bc75-d2922f1130c7" alt="Mobile Version" width="200"> |
+
 ## Features
 - **Adaptive/Responsive UI**: Adapts between desktop and mobile interfaces using a dialog for desktop and a drawer for mobile, powered by shadcn/ui components.
 - **Seamless Wallet Integration**: Supports a variety of Solana wallets via `@solana/wallet-adapter-react`.
