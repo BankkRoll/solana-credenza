@@ -276,6 +276,14 @@ import {
 import { Button } from "@/components/ui/button";
 import { useWallet } from "@solana/wallet-adapter-react";
 
+const WalletMultiButtonDynamic = dynamic(
+  () =>
+    import("@solana/wallet-adapter-react-ui").then(
+      (mod) => mod.WalletMultiButton
+    ),
+  { ssr: false }
+);
+
 export default function Home() {
   const wallet = useWallet();
   const { select, wallets } = useWallet();
@@ -302,6 +310,7 @@ Implement the Credenza component as follows:
                 Connect a Wallet on <br /> Solana to Continue
               </h2>
             </CredenzaHeader>
+
             <CredenzaBody className="overflow-y-auto">
               {wallets.map((wallet) => (
                 <CredenzaClose
